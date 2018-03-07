@@ -58,12 +58,12 @@ public class ThirdPersonCameraCtrl : MonoBehaviour {
         else {
             // setting the target position to be the correct offset from the hovercraft  
             //targetPosition = follow.position + Vector3.up* distanceUp + follow.forward* distanceAway;  
-            targetPosition = new Vector3(follow.position.x,orginY, follow.position.z) + Vector3.up * distanceUp + Vector3.forward * distanceAway;
+            targetPosition = follow.position + Vector3.forward * distanceAway;
             // making a smooth transition between it's current position and the position it wants to be in  
             //transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime* smooth);  
             transform.position = Vector3.Lerp(transform.position, targetPosition, smooth);
             // make sure the camera is looking the right way!  
-            transform.LookAt(follow);
+            //transform.LookAt(follow);
         }
     }
 

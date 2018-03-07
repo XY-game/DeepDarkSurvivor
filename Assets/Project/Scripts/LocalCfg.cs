@@ -7,6 +7,8 @@ public static class LocalCfg {
 
     public static string weaponSystem = "TankBulletSystem";
 
+    public static string serverAddress = "127.0.0.1";
+
     public static string skill_1 = "";
 
     public static string skill_2 = "";

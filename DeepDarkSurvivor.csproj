@@ -490,6 +490,8 @@
     <Compile Include="Assets\Project\Scripts\Logic\Item\BaseItemNet.cs" />
     <Compile Include="Assets\Project\Scripts\Logic\Item\ChangeItemCtrl.cs" />
     <Compile Include="Assets\Project\Scripts\Logic\Item\ShieldItemCtrl.cs" />
+    <Compile Include="Assets\Project\Scripts\Logic\Map\MapBuilder.cs" />
+    <Compile Include="Assets\Project\Scripts\Logic\Map\RoadBuilder.cs" />
     <Compile Include="Assets\Project\Scripts\Logic\Player\BasePlayerCtrl.cs" />
     <Compile Include="Assets\Project\Scripts\Logic\Player\BasePlayerNet.cs" />
     <Compile Include="Assets\Project\Scripts\Logic\Player\Skill\BaseSkillCtrl.cs" />

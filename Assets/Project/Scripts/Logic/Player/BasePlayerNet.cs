@@ -54,9 +54,9 @@ public class BasePlayerNet : BaseObj
 
     void Init() {
         if (photonView.isMine) {
-//            cameraCtrl = Camera.main.GetComponent<ThirdPersonCameraCtrl>();
-//            cameraCtrl.follow = this.gameObject.transform;
-//            cameraCtrl.enabled = true;
+            cameraCtrl = Camera.main.GetComponent<ThirdPersonCameraCtrl>();
+            cameraCtrl.follow = this.gameObject.transform;
+            cameraCtrl.enabled = true;
 
             playerCtrl.enabled = true;
 			playerCtrl.isLocalLogic = true;

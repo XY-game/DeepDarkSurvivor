@@ -37,7 +37,7 @@ public class NetClient : MonoBehaviour {
 
 	void Awake(){
 		DontDestroyOnLoad (this.gameObject);
-		ConnectToServer ();
+		//ConnectToServer ();
 
 	}
 
@@ -56,9 +56,12 @@ public class NetClient : MonoBehaviour {
 
 		//set version
 		if (PhotonNetwork.connectionStateDetailed == ClientState.PeerCreated)  
-		{  
-			PhotonNetwork.ConnectUsingSettings (LocalCfg.VERSION);
-		}  
+		{
+            //PhotonNetwork.ConnectUsingSettings (LocalCfg.VERSION);
+            PhotonNetwork.SwitchToProtocol(ExitGames.Client.Photon.ConnectionProtocol.Udp);
+            PhotonNetwork.ConnectToMaster(LocalCfg.serverAddress, 5055,
+                "ea30a92a-abe2-4af8-9486-5f26118d8867", LocalCfg.VERSION);
+        }  
 	
 		//unique playername
 		#if UNITY_EDITOR

@@ -8,6 +8,7 @@ public class UILogin : MonoBehaviour {
 
 
 	bool isJoinInUpdate = false;
+    public InputField serverAddress;
     public InputField nickName;
 
 	// Use this for initialization
@@ -21,7 +22,8 @@ public class UILogin : MonoBehaviour {
 	}
 
 	public void JoinSingleGame(int id){
-		StartCoroutine (JoinSingle(id));
+        NetClient.GetInstatic().ConnectToServer();
+        StartCoroutine (JoinSingle(id));
 	}
 
 	IEnumerator JoinSingle(int id){

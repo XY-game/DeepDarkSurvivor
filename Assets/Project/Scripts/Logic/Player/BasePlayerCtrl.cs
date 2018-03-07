@@ -98,23 +98,26 @@ public class BasePlayerCtrl : BaseObjCtrl
         CheckRot();
     }
 
-    public bool isChangedDir = false;
+    public bool isMove = false;
     public bool isLeft = false;
     protected void Move()
     {
-        isChangedDir = false;
+        isMove = false;
         Vector3 moveDir = Vector3.zero;
         if (Input.GetKey(KeyCode.W))
         {
+            isMove = true;
             moveDir += tr.up;
         }
         else if (Input.GetKey(KeyCode.S))
         {
-			moveDir -= tr.up;
+            isMove = true;
+            moveDir -= tr.up;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
+            isMove = true;
             moveDir -= tr.right;
             if (!isLeft) {
                 isLeft = true;
@@ -123,6 +126,7 @@ public class BasePlayerCtrl : BaseObjCtrl
         }
         else if (Input.GetKey(KeyCode.D))
         {
+            isMove = true;
             moveDir += tr.right;
             if (isLeft)
             {
@@ -130,8 +134,16 @@ public class BasePlayerCtrl : BaseObjCtrl
             }
         }
 
+        if (isMove && moveSpeed <= maxSpeed)
+        {
+            moveSpeed = moveSpeed + accSpeed >= maxSpeed ? maxSpeed : moveSpeed + accSpeed;
+        }
+        else {
+            moveSpeed = 0;
+        }
+
         animator.SetFloat("speed", moveDir.magnitude);
-        tr.Translate (moveDir*Time.deltaTime);
+        tr.Translate (moveDir* moveSpeed *Time.deltaTime);
     }
 
     void CheckRot()
