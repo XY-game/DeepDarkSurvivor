@@ -113,6 +113,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &817167811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 817167813}
+  - component: {fileID: 817167812}
+  m_Layer: 0
+  m_Name: GridManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &817167812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 817167811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65b3a2428f7d097489987be96dea9044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numOfRows: 0
+  numOfColumns: 0
+  gridCellSize: 0
+  showGrid: 1
+  showObstacleBlocks: 1
+--- !u!4 &817167813
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 817167811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1092725286
 Prefab:
   m_ObjectHideFlags: 0
@@ -267,6 +312,7 @@ GameObject:
   - component: {fileID: 1872658912}
   - component: {fileID: 1872658911}
   - component: {fileID: 1872658915}
+  - component: {fileID: 1872658916}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -343,7 +389,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1872658910}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 613fac66de690f94f9c1f237f168754a, type: 3}
   m_Name: 
@@ -356,3 +402,22 @@ MonoBehaviour:
   randRange: 60
   smoothRangeMax: 5
   smoothRangeMin: 2
+--- !u!114 &1872658916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1872658910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79d6f02079a361b4b84ca167ec0efd36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  width: 300
+  height: 300
+  seed: 
+  useRandomSeed: 1
+  randomFillPercent: 46
+  cube1: {fileID: 1180952764419660, guid: 6406fffc039587041b754212146084a9, type: 2}
+  cube2: {fileID: 1937983413836776, guid: a1bfb20f860417d40b8aaedb940b6881, type: 2}
+  cubeDis: 1.2

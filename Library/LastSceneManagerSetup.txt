@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Project/Scenes/LoginUI.unity
+- path: Assets/Project/Scenes/MapTest.unity
   isLoaded: 1
   isActive: 1

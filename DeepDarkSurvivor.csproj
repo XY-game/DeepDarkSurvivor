@@ -479,6 +479,10 @@
     <Compile Include="Assets\PhotonChatApi\ChatState.cs" />
     <Compile Include="Assets\PhotonChatApi\ChatUserStatus.cs" />
     <Compile Include="Assets\PhotonChatApi\IChatClientListener.cs" />
+    <Compile Include="Assets\Project\Scripts\AStar\AStar.cs" />
+    <Compile Include="Assets\Project\Scripts\AStar\GridManager.cs" />
+    <Compile Include="Assets\Project\Scripts\AStar\Node.cs" />
+    <Compile Include="Assets\Project\Scripts\AStar\PriorityQueue.cs" />
     <Compile Include="Assets\Project\Scripts\LocalCfg.cs" />
     <Compile Include="Assets\Project\Scripts\Logic\BaseGameRoot.cs" />
     <Compile Include="Assets\Project\Scripts\Logic\BaseObj.cs" />
@@ -491,6 +495,7 @@
     <Compile Include="Assets\Project\Scripts\Logic\Item\ChangeItemCtrl.cs" />
     <Compile Include="Assets\Project\Scripts\Logic\Item\ShieldItemCtrl.cs" />
     <Compile Include="Assets\Project\Scripts\Logic\Map\MapBuilder.cs" />
+    <Compile Include="Assets\Project\Scripts\Logic\Map\MapGenerator.cs" />
     <Compile Include="Assets\Project\Scripts\Logic\Map\RoadBuilder.cs" />
     <Compile Include="Assets\Project\Scripts\Logic\Player\BasePlayerCtrl.cs" />
     <Compile Include="Assets\Project\Scripts\Logic\Player\BasePlayerNet.cs" />
