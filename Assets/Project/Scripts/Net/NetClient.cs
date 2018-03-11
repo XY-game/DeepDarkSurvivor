@@ -43,12 +43,29 @@ public class NetClient : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		Debug.Log (Application.dataPath);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	public void ConnectToCloudServer(){
+		PhotonNetwork.automaticallySyncScene = true;
+
+		//set version
+		if (PhotonNetwork.connectionStateDetailed == ClientState.PeerCreated)  
+		{
+			PhotonNetwork.ConnectUsingSettings (LocalCfg.VERSION);
+		}  
+
+		//unique playername
+		#if UNITY_EDITOR
+		PhotonNetwork.playerName = "player" + Random.Range(0,9999);
+		#else
+		PhotonNetwork.playerName = "player" + SystemInfo.deviceUniqueIdentifier;
+		#endif
 	}
 
 	public void ConnectToServer(){
@@ -201,5 +218,8 @@ public class NetClient : MonoBehaviour {
 		}
 	}
 
+	public void StartLocalService(){
 
+
+	}
 }

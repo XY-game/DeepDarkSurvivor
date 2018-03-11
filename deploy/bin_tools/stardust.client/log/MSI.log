@@ -1,0 +1,25 @@
+2018-03-06 03:12:44,272 [1] INFO  Photon.StarDust.Client.Program - Starting 5 games with 3 players
+2018-03-06 03:12:44,456 [11] INFO  Photon.StarDust.Client.ConnectionStates.LoadBalancing.WaitingForGameServerConnect - Connecting to 192.168.3.7:5056
+2018-03-06 03:12:44,700 [6] INFO  Photon.StarDust.Client.Program - [9200] Started game MSI(9200)1 with 3 clients
+2018-03-06 03:12:44,856 [5] INFO  Photon.StarDust.Client.ConnectionStates.LoadBalancing.WaitingForGameServerConnect - Connecting to 192.168.3.7:5056
+2018-03-06 03:12:45,058 [4] INFO  Photon.StarDust.Client.ConnectionStates.LoadBalancing.WaitingForGameServerConnect - Connecting to 192.168.3.7:5056
+2018-03-06 03:12:45,213 [6] INFO  Photon.StarDust.Client.Program - [9200] Started game MSI(9200)2 with 3 clients
+2018-03-06 03:12:45,229 [16] INFO  Photon.StarDust.Client.ConnectionStates.LoadBalancing.WaitingForGameServerConnect - Connecting to 192.168.3.7:5056
+2018-03-06 03:12:45,277 [12] DEBUG Photon.StarDust.Client.Program - peers: 6, r-ev: 13.14915, ur-ev: 0, r-op: 27.39406, ur-op: 0, res: 17.53216, r-rtt: 48, ur-rtt: 0, rtt: 5.333333, var: 36, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2018-03-06 03:12:45,337 [44] INFO  Photon.StarDust.Client.ConnectionStates.LoadBalancing.WaitingForGameServerConnect - Connecting to 192.168.3.7:5056
+2018-03-06 03:12:45,573 [38] INFO  Photon.StarDust.Client.ConnectionStates.LoadBalancing.WaitingForGameServerConnect - Connecting to 192.168.3.7:5056
+2018-03-06 03:12:45,574 [6] INFO  Photon.StarDust.Client.Program - [9200] Started game MSI(9200)3 with 3 clients
+2018-03-06 03:12:45,698 [41] INFO  Photon.StarDust.Client.ConnectionStates.LoadBalancing.WaitingForGameServerConnect - Connecting to 192.168.3.7:5056
+2018-03-06 03:12:45,729 [40] INFO  Photon.StarDust.Client.ConnectionStates.LoadBalancing.WaitingForGameServerConnect - Connecting to 192.168.3.7:5056
+2018-03-06 03:12:45,962 [43] INFO  Photon.StarDust.Client.ConnectionStates.LoadBalancing.WaitingForGameServerConnect - Connecting to 192.168.3.7:5056
+2018-03-06 03:12:46,024 [6] INFO  Photon.StarDust.Client.Program - [9200] Started game MSI(9200)4 with 3 clients
+2018-03-06 03:12:46,040 [40] INFO  Photon.StarDust.Client.ConnectionStates.LoadBalancing.WaitingForGameServerConnect - Connecting to 192.168.3.7:5056
+2018-03-06 03:12:46,149 [7] INFO  Photon.StarDust.Client.ConnectionStates.LoadBalancing.WaitingForGameServerConnect - Connecting to 192.168.3.7:5056
+2018-03-06 03:12:46,288 [43] DEBUG Photon.StarDust.Client.Program - peers: 14, r-ev: 97.90405, ur-ev: 0, r-op: 88.01471, ur-op: 0, res: 30.65681, r-rtt: 42.71053, ur-rtt: 0, rtt: 7.181818, var: 26.63636, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2018-03-06 03:12:46,319 [15] INFO  Photon.StarDust.Client.ConnectionStates.LoadBalancing.WaitingForGameServerConnect - Connecting to 192.168.3.7:5056
+2018-03-06 03:12:46,366 [6] INFO  Photon.StarDust.Client.Program - [9200] Started game MSI(9200)5 with 3 clients
+2018-03-06 03:12:46,490 [5] INFO  Photon.StarDust.Client.ConnectionStates.LoadBalancing.WaitingForGameServerConnect - Connecting to 192.168.3.7:5056
+2018-03-06 03:12:46,809 [40] INFO  Photon.StarDust.Client.ConnectionStates.LoadBalancing.WaitingForGameServerConnect - Connecting to 192.168.3.7:5056
+2018-03-06 03:12:46,933 [5] INFO  Photon.StarDust.Client.ConnectionStates.LoadBalancing.WaitingForGameServerConnect - Connecting to 192.168.3.7:5056
+2018-03-06 03:12:47,296 [16] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 240.0159, ur-ev: 0, r-op: 129.9261, ur-op: 0, res: 12.89343, r-rtt: 43.61905, ur-rtt: 0, rtt: 12.66667, var: 13.33333, flsh-rtt: 0, flsh-ev 0, flsh-op 0
+2018-03-06 03:12:48,298 [11] DEBUG Photon.StarDust.Client.Program - peers: 15, r-ev: 272.3914, ur-ev: 0, r-op: 135.6968, ur-op: 0, res: 0, r-rtt: 41.14652, ur-rtt: 0, rtt: 14.33333, var: 4.666667, flsh-rtt: 0, flsh-ev 0, flsh-op 0

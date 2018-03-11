@@ -1,0 +1,108 @@
+18960: 01:16:59.094 - ---
+18960: 01:16:59.094 - Service: "Photon Socket Server" starting
+18960: 01:16:59.095 - Config File: D:\Project\Test\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+18960: 01:16:59.096 - Will produce at most: 10 crash dumps
+18960: 01:16:59.096 - Action: run as exe
+18960: 01:16:59.434 - Server Starting...
+18960: 01:16:59.434 -    Tick count: 1548589093 (wraps in: 31.7868 days)
+18960: 01:16:59.434 - Tick count 64: 1548589093
+18960: 01:16:59.434 - Photon Version: 4.0.28.2962
+18960: 01:16:59.434 - PID: 7832
+18960: 01:16:59.434 - Config File: D:\Project\Test\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+18960: 01:16:59.466 - CService::OnException() - Exception: CXMLConfiguration::LoadDocument() - Failed to located required initial child element: "LoadBalancing(MyCloud)" - Source: "D:\Project\Test\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config"
+18960: 01:16:59.466 - Server shutting down...
+18960: 01:16:59.466 - Shutting down socket servers...
+18960: 01:16:59.466 - Destroying servers
+18960: 01:16:59.466 - Destroying WebSocket Outbound Connection Manager
+18960: 01:16:59.466 - Destroying TCP Outbound Connection Manager
+18960: 01:16:59.466 - Destroying TCP inactivity timer
+18960: 01:16:59.466 - Destroying ENet timer wheel
+18960: 01:16:59.466 - Destroying ENet host
+18960: 01:16:59.466 - Destroying HTTP inactivity timer
+18960: 01:16:59.466 - Destroying HTTP host
+18960: 01:16:59.466 - Destroying HTTP Chunk host
+18960: 01:16:59.466 - Destroying CLR dispatcher
+18960: 01:16:59.466 - Destroying CLR applications
+18960: 01:16:59.466 - Destroying ENet thread pool
+18960: 01:16:59.466 - Destroying I/O thread pool
+18960: 01:16:59.466 - Destroying ENet buffer allocator
+18960: 01:16:59.466 - Destroying TCP buffer allocator
+18960: 01:16:59.466 - Destroying TCP socket allocator
+18960: 01:16:59.466 - Destroying ENet inbound socket allocator
+18960: 01:16:59.466 - Destroying ENet outbound socket allocator
+18960: 01:16:59.466 - Destroying shared datagram flow control data
+18960: 01:16:59.468 - Shutdown complete...
+18960: 01:16:59.469 - Service shutting down: invalid instance name. Errorcode: 110
+18960: 01:16:59.469 - Service shut down complete
+16880: 01:19:05.895 - ---
+16880: 01:19:05.895 - Service: "Photon Socket Server" starting
+16880: 01:19:05.895 - Config File: D:\Project\Test\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+16880: 01:19:05.896 - Will produce at most: 10 crash dumps
+16880: 01:19:05.896 - Action: run as exe
+16880: 01:19:05.896 - Server Starting...
+16880: 01:19:05.896 -    Tick count: 1548715546 (wraps in: 31.7853 days)
+16880: 01:19:05.896 - Tick count 64: 1548715546
+16880: 01:19:05.896 - Photon Version: 4.0.28.2962
+16880: 01:19:05.896 - PID: 3976
+16880: 01:19:05.896 - Config File: D:\Project\Test\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+16880: 01:19:05.896 - CService::OnException() - Exception: CXMLConfiguration::LoadDocument() - Failed to located required initial child element: "LoadBalancing(MyCloud)" - Source: "D:\Project\Test\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config"
+16880: 01:19:05.896 - Server shutting down...
+16880: 01:19:05.896 - Shutting down socket servers...
+16880: 01:19:05.897 - Destroying servers
+16880: 01:19:05.897 - Destroying WebSocket Outbound Connection Manager
+16880: 01:19:05.897 - Destroying TCP Outbound Connection Manager
+16880: 01:19:05.897 - Destroying TCP inactivity timer
+16880: 01:19:05.897 - Destroying ENet timer wheel
+16880: 01:19:05.897 - Destroying ENet host
+16880: 01:19:05.897 - Destroying HTTP inactivity timer
+16880: 01:19:05.897 - Destroying HTTP host
+16880: 01:19:05.897 - Destroying HTTP Chunk host
+16880: 01:19:05.897 - Destroying CLR dispatcher
+16880: 01:19:05.897 - Destroying CLR applications
+16880: 01:19:05.897 - Destroying ENet thread pool
+16880: 01:19:05.897 - Destroying I/O thread pool
+16880: 01:19:05.897 - Destroying ENet buffer allocator
+16880: 01:19:05.897 - Destroying TCP buffer allocator
+16880: 01:19:05.897 - Destroying TCP socket allocator
+16880: 01:19:05.897 - Destroying ENet inbound socket allocator
+16880: 01:19:05.897 - Destroying ENet outbound socket allocator
+16880: 01:19:05.897 - Destroying shared datagram flow control data
+16880: 01:19:05.897 - Shutdown complete...
+16880: 01:19:05.897 - Service shutting down: invalid instance name. Errorcode: 110
+16880: 01:19:05.897 - Service shut down complete
+6748: 01:20:08.891 - ---
+6748: 01:20:08.891 - Service: "Photon Socket Server" starting
+6748: 01:20:08.891 - Config File: D:\Project\Test\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+6748: 01:20:08.892 - Will produce at most: 10 crash dumps
+6748: 01:20:08.892 - Action: run as exe
+6748: 01:20:08.892 - Server Starting...
+6748: 01:20:08.892 -    Tick count: 1548778546 (wraps in: 31.7846 days)
+6748: 01:20:08.892 - Tick count 64: 1548778546
+6748: 01:20:08.892 - Photon Version: 4.0.28.2962
+6748: 01:20:08.892 - PID: 8136
+6748: 01:20:08.892 - Config File: D:\Project\Test\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+6748: 01:20:08.893 - CService::OnException() - Exception: CXMLConfiguration::LoadDocument() - Failed to located required initial child element: "LoadBalancing(MyCloud)" - Source: "D:\Project\Test\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config"
+6748: 01:20:08.893 - Server shutting down...
+6748: 01:20:08.893 - Shutting down socket servers...
+6748: 01:20:08.893 - Destroying servers
+6748: 01:20:08.893 - Destroying WebSocket Outbound Connection Manager
+6748: 01:20:08.893 - Destroying TCP Outbound Connection Manager
+6748: 01:20:08.893 - Destroying TCP inactivity timer
+6748: 01:20:08.893 - Destroying ENet timer wheel
+6748: 01:20:08.893 - Destroying ENet host
+6748: 01:20:08.893 - Destroying HTTP inactivity timer
+6748: 01:20:08.893 - Destroying HTTP host
+6748: 01:20:08.893 - Destroying HTTP Chunk host
+6748: 01:20:08.893 - Destroying CLR dispatcher
+6748: 01:20:08.893 - Destroying CLR applications
+6748: 01:20:08.893 - Destroying ENet thread pool
+6748: 01:20:08.893 - Destroying I/O thread pool
+6748: 01:20:08.893 - Destroying ENet buffer allocator
+6748: 01:20:08.893 - Destroying TCP buffer allocator
+6748: 01:20:08.893 - Destroying TCP socket allocator
+6748: 01:20:08.893 - Destroying ENet inbound socket allocator
+6748: 01:20:08.893 - Destroying ENet outbound socket allocator
+6748: 01:20:08.893 - Destroying shared datagram flow control data
+6748: 01:20:08.893 - Shutdown complete...
+6748: 01:20:08.893 - Service shutting down: invalid instance name. Errorcode: 110
+6748: 01:20:08.895 - Service shut down complete

@@ -232,6 +232,7 @@
      <Compile Include="Assets\Project\Scripts\Logic\Item\BaseItemCtrl.cs" />
      <Compile Include="Assets\Project\Scripts\Logic\Item\BaseItemNet.cs" />
      <Compile Include="Assets\Project\Scripts\Logic\Item\ChangeItemCtrl.cs" />
+     <Compile Include="Assets\Project\Scripts\Logic\Item\MapObjectCtrl.cs" />
      <Compile Include="Assets\Project\Scripts\Logic\Item\ShieldItemCtrl.cs" />
      <Compile Include="Assets\Project\Scripts\Logic\Map\MapBuilder.cs" />
      <Compile Include="Assets\Project\Scripts\Logic\Map\MapGenerator.cs" />

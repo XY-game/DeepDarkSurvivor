@@ -1,0 +1,63 @@
+15740: 01:16:07.168 - ---
+15740: 01:16:07.168 - Service: "Photon Socket Server" starting
+15740: 01:16:07.168 - Config File: D:\Project\Test\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+15740: 01:16:07.170 - Will produce at most: 10 crash dumps
+15740: 01:16:07.170 - 
+15740: 01:16:07.170 - ERROR: ***************************************************************
+15740: 01:16:07.170 - ERROR: Unknown command line option: "/start"
+15740: 01:16:07.170 - ERROR: ***************************************************************
+15740: 01:16:07.170 - 
+15740: 01:16:07.170 - MessageBox: Photon Socket Server - 4.0.28.2962
+
+Unknown command line option: "/start"
+
+Usage: PhotonSocketServer.exe  Followed by the following command line options.
+  /help		Display this list.
+  /noMessages	Must be first. Do not display status messages.
+  /install name	Installs an instance of the service named 'name'.
+  /installCounters	Installs performance counters for this service.
+  /remove name	Removes the instance of the service named 'name'.
+  /removeCounters	Removes performance counters for this service.
+  /run name   	Runs the service as a normal process for debugging.
+  /stop         	Request all instances of Photon to shutdown and exit.
+  /stop1 name	Request instance 'name' of Photon shutdown and exit.
+  /configPath path	Use the supplied path to locate the config file.
+  /config file	Use the supplied config file.
+
+Note that /config and /configFile can be used with /install and /run
+
+Note that only /noMessages can be combined with all other command line options.
+
+15740: 01:16:13.204 - Service shutting down: commandline option error. Errorcode: 255
+15740: 01:16:13.205 - Service shut down complete
+13808: 01:18:12.421 - ---
+13808: 01:18:12.421 - Service: "Photon Socket Server" starting
+13808: 01:18:12.421 - Config File: D:\Project\Test\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+13808: 01:18:12.422 - Will produce at most: 10 crash dumps
+13808: 01:18:12.422 - Service shutting down
+13808: 01:18:12.422 - Service shut down complete
+15192: 01:23:26.563 - ---
+15192: 01:23:26.563 - Service: "Photon Socket Server" starting
+15192: 01:23:26.563 - Config File: D:\Project\Test\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+15192: 01:23:26.564 - Will produce at most: 10 crash dumps
+15192: 01:23:26.564 - MessageBox: Photon Socket Server - 4.0.28.2962
+
+Usage: PhotonSocketServer.exe  Followed by the following command line options.
+  /help		Display this list.
+  /noMessages	Must be first. Do not display status messages.
+  /install name	Installs an instance of the service named 'name'.
+  /installCounters	Installs performance counters for this service.
+  /remove name	Removes the instance of the service named 'name'.
+  /removeCounters	Removes performance counters for this service.
+  /run name   	Runs the service as a normal process for debugging.
+  /stop         	Request all instances of Photon to shutdown and exit.
+  /stop1 name	Request instance 'name' of Photon shutdown and exit.
+  /configPath path	Use the supplied path to locate the config file.
+  /config file	Use the supplied config file.
+
+Note that /config and /configFile can be used with /install and /run
+
+Note that only /noMessages can be combined with all other command line options.
+
+15192: 01:24:24.793 - Service shutting down: commandline option error. Errorcode: 255
+15192: 01:24:24.796 - Service shut down complete
