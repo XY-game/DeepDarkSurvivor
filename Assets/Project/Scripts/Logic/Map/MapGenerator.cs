@@ -19,27 +19,33 @@ public class MapGenerator : MonoBehaviour
     GameObject cubes;
 
     public float cubeDis = 1.2f;
+    public int smoothCount = 3;
+
     void Start()
     {
-        cubes = new GameObject("Map");
+       
         GenerateMap();
     }
 
     // Update is called once per frame  
     void Update()
     {
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    GenerateMap();
-        //}
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            GenerateMap();
+        }
     }
 
     void GenerateMap()
     {
+        if (cubes)
+            Destroy(cubes);
+
+        cubes = new GameObject("Map");
         map = new int[width, height];
         RandomFillMap();
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < smoothCount; i++)
         {
             SmoothMap();
         }

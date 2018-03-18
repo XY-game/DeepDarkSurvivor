@@ -32,8 +32,8 @@ namespace AStarPathing
 
         void Awake()
         {
-            obstacleList = GameObject.FindGameObjectsWithTag("Obstacle");
-            CalculateObstacles();
+            //obstacleList = GameObject.FindGameObjectsWithTag("Obstacle");
+            //CalculateObstacles();
         }
 
         // Use this for initialization

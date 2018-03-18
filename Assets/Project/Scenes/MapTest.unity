@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.4964127, b: 0.5748172, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -145,6 +145,7 @@ MonoBehaviour:
   gridCellSize: 0
   showGrid: 1
   showObstacleBlocks: 1
+  origin: {x: 0, y: 0, z: 0}
 --- !u!4 &817167813
 Transform:
   m_ObjectHideFlags: 0
@@ -313,6 +314,7 @@ GameObject:
   - component: {fileID: 1872658911}
   - component: {fileID: 1872658915}
   - component: {fileID: 1872658916}
+  - component: {fileID: 1872658917}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -413,11 +415,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79d6f02079a361b4b84ca167ec0efd36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 300
-  height: 300
+  width: 150
+  height: 150
   seed: 
   useRandomSeed: 1
-  randomFillPercent: 46
+  randomFillPercent: 51
   cube1: {fileID: 1180952764419660, guid: 6406fffc039587041b754212146084a9, type: 2}
   cube2: {fileID: 1937983413836776, guid: a1bfb20f860417d40b8aaedb940b6881, type: 2}
   cubeDis: 1.2
+  smoothCount: 3
+--- !u!114 &1872658917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1872658910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32187365ced0c42219cde2b57c99b323, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings:
+    threshold: 1
+    softKnee: 0.654
+    radius: 2.71
+    intensity: 0.7
+    highQuality: 1
+    antiFlicker: 0
+    dirtTexture: {fileID: 0}
+    dirtIntensity: 3
+  m_Shader: {fileID: 4800000, guid: e45d4f28262b04d10a075856ab5fdb5e, type: 3}
