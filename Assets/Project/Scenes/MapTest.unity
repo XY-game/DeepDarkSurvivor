@@ -419,9 +419,9 @@ MonoBehaviour:
   height: 150
   seed: 
   useRandomSeed: 1
-  randomFillPercent: 51
-  cube1: {fileID: 1180952764419660, guid: 6406fffc039587041b754212146084a9, type: 2}
-  cube2: {fileID: 1937983413836776, guid: a1bfb20f860417d40b8aaedb940b6881, type: 2}
+  randomFillPercent: 46
+  cube1: {fileID: 1751705791219062, guid: c771b8c93107f9a44860d6bd446cfb1b, type: 2}
+  cube2: {fileID: 1751705791219062, guid: c771b8c93107f9a44860d6bd446cfb1b, type: 2}
   cubeDis: 1.2
   smoothCount: 3
 --- !u!114 &1872658917

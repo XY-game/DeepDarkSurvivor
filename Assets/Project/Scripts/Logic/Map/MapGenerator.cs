@@ -119,28 +119,62 @@ public class MapGenerator : MonoBehaviour
     }
 
     void DrawMap() {
-        if (map != null)
-        {
-            for (int x = 0; x < width; x++)
-            {
-                for (int y = 0; y < height; y++)
-                {
-                    if (map[x, y] == 1)
-                    {
-                        GameObject go = Instantiate(cube1, new Vector3(x, y, 0) * cubeDis - new Vector3(cubeDis * width / 2, cubeDis * height / 2, 0), Quaternion.identity) as GameObject;
-                        go.transform.SetParent(cubes.transform);
-                        go.isStatic = true;
-                    }
-                    else
-                    {
-                        GameObject go = Instantiate(cube2, new Vector3(x, y, 0) * cubeDis - new Vector3(cubeDis * width / 2, cubeDis * height / 2, 0), Quaternion.identity) as GameObject;
-                        go.transform.SetParent(cubes.transform);
-                        go.isStatic = true;
-                    }
-                }
-            }
-        }
+//        if (map != null)
+//        {
+//            for (int x = 0; x < width; x++)
+//            {
+//                for (int y = 0; y < height; y++)
+//                {
+//                    if (map[x, y] == 1)
+//                    {
+//                        GameObject go = Instantiate(cube1, new Vector3(x, y, 0) * cubeDis - new Vector3(cubeDis * width / 2, cubeDis * height / 2, 0), Quaternion.identity) as GameObject;
+//                        go.transform.SetParent(cubes.transform);
+//                        go.isStatic = true;
+//                    }
+//                    else
+//                    {
+//                        GameObject go = Instantiate(cube2, new Vector3(x, y, 0) * cubeDis - new Vector3(cubeDis * width / 2, cubeDis * height / 2, 0), Quaternion.identity) as GameObject;
+//                        go.transform.SetParent(cubes.transform);
+//                        go.isStatic = true;
+//                    }
+//                }
+//            }
+//        }
+		StartCoroutine(EnDrawMap());
     }
+
+	IEnumerator EnDrawMap(){
+		if (map != null)
+		{
+			
+			for (int x = 0; x < width; x++)
+			{
+				for (int y = 0; y < height; y++)
+				{
+					float randX = Random.value;
+					float randY = Random.value;
+					float xSample = (randX + x/width)/2;
+					float ySample = (randY + y/height)/2;
+					if (map[x, y] == 1)
+					{
+						GameObject go = Instantiate(cube1, new Vector3(x, y, 0) * cubeDis - new Vector3(cubeDis * width / 2, cubeDis * height / 2, 0), Quaternion.identity) as GameObject;
+						go.transform.SetParent(cubes.transform);
+						go.GetComponent<MeshRenderer> ().material.color = new Color (0, 0, 1, xSample);
+						go.isStatic = true;
+					}
+					else
+					{
+						GameObject go = Instantiate(cube2, new Vector3(x, y, 0) * cubeDis - new Vector3(cubeDis * width / 2, cubeDis * height / 2, 0), Quaternion.identity) as GameObject;
+						go.transform.SetParent(cubes.transform);
+						go.GetComponent<MeshRenderer> ().material.color = new Color (0, 1, 0, ySample);
+						go.isStatic = true;
+					}
+				}
+				yield return new WaitForSeconds (0.1f);
+			}
+		}
+		yield return 0;
+	}
 
     //void OnDrawGizmos()
     //{
