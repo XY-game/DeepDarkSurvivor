@@ -1,6 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum MapObjType{
+	NotWall = -1,
+	Wall = 0,
+	Floor = 1,
+	Water = 2
+}
+
 public class MapGenerator : MonoBehaviour
 {
     public int width;
@@ -23,7 +30,6 @@ public class MapGenerator : MonoBehaviour
 
     void Start()
     {
-       
         GenerateMap();
     }
 
@@ -68,12 +74,14 @@ public class MapGenerator : MonoBehaviour
             {
                 if (x == 0 || x == width - 1 || y == 0 || y == height - 1)
                 {
-                    map[x, y] = 1;
+					map[x, y] = MapObjType.Wall;
                 }
                 else
                 {
-                    map[x, y] = (pseudoRandom.Next(0, 100) < randomFillPercent) ? 1 : 0;
+					map[x, y] = (pseudoRandom.Next(0, 100) < randomFillPercent) ? MapObjType.Wall :  MapObjType.NotWall;
                 }
+
+
             }
         }
     }
@@ -87,9 +95,9 @@ public class MapGenerator : MonoBehaviour
                 int neighbourWallTiles = GetSurroundingWallCount(x, y);
 
                 if (neighbourWallTiles > 4)
-                    map[x, y] = 1;
+					map[x, y] = MapObjType.Wall;
                 else if (neighbourWallTiles < 4)
-                    map[x, y] = 0;
+					map[x, y] = MapObjType.NotWall;
 
             }
         }
@@ -117,6 +125,10 @@ public class MapGenerator : MonoBehaviour
         }
         return wallCount;
     }
+
+	int GetNotWallType(int x,int y){
+		return -1;
+	}
 
     void DrawMap() {
 //        if (map != null)
@@ -151,22 +163,25 @@ public class MapGenerator : MonoBehaviour
 			{
 				for (int y = 0; y < height; y++)
 				{
-					float randX = Random.value;
-					float randY = Random.value;
-					float xSample = (randX + x/width)/2;
-					float ySample = (randY + y/height)/2;
+//					float randX = Random.Range(0f,5f);
+//					float randY = Random.Range(0f,5f);
+//					float xSample = (randX + x/width)/6;
+//					float ySample = (randY + y/height)/6;
+
+//					float xSample = 1f*x/width;
+//					float ySample = 1f*y/height;
 					if (map[x, y] == 1)
 					{
 						GameObject go = Instantiate(cube1, new Vector3(x, y, 0) * cubeDis - new Vector3(cubeDis * width / 2, cubeDis * height / 2, 0), Quaternion.identity) as GameObject;
 						go.transform.SetParent(cubes.transform);
-						go.GetComponent<MeshRenderer> ().material.color = new Color (0, 0, 1, xSample);
+//						go.GetComponent<MeshRenderer> ().material.color = new Color (0, 0, 1, xSample);
 						go.isStatic = true;
 					}
 					else
 					{
 						GameObject go = Instantiate(cube2, new Vector3(x, y, 0) * cubeDis - new Vector3(cubeDis * width / 2, cubeDis * height / 2, 0), Quaternion.identity) as GameObject;
 						go.transform.SetParent(cubes.transform);
-						go.GetComponent<MeshRenderer> ().material.color = new Color (0, 1, 0, ySample);
+//						go.GetComponent<MeshRenderer> ().material.color = new Color (0, 1, 0, ySample);
 						go.isStatic = true;
 					}
 				}

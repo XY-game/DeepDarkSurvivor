@@ -9,7 +9,7 @@
       <File FileName="Assets\Project\Scripts\Net\NetClient.cs" Line="1" Column="1" />
       <File FileName="Assets\Project\Scripts\Logic\Item\MapObjectCtrl.cs" Line="1" Column="1" />
       <File FileName="Assets\Project\Scripts\AStar\GridManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Project\Scripts\Logic\Map\MapGenerator.cs" Line="81" Column="5" />
+      <File FileName="Assets\Project\Scripts\Logic\Map\MapGenerator.cs" Line="6" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
